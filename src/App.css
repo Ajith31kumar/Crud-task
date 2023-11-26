@@ -1,38 +1,97 @@
-.App {
+/* Container styles */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  color: #333; /* Text color */
+  background-color: #f0f0f0; /* Background color */
+}
+
+/* Full-width text */
+p {
+  font-size: 200px;
+  width: 100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.form {
+  width: 50%; /* Adjust based on your layout needs */
+ /* Set a maximum width for the form */
+  background-color: #a8a2a2; /* Form background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for a subtle lift */
+  margin-top: 20px; /* Add some space between the text and the form */
+  height: 500px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Row and column styles */
+.row {
+  display: block; /* Each row on a new line */
+  margin-bottom: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.column {
+  width: 100%; /* Each column takes full width */
+}
+
+/* Font size and styling for buttons */
+.update-btn,
+.delete-btn,
+.submit-btn {
+  font-size: 100px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Each button takes full width */
+  margin-top: 10px; /* Add space between buttons */
+}
+
+/* Hover effect for buttons */
+.update-btn:hover,
+.delete-btn:hover,
+.submit-btn:hover {
+  background-color: #d9e6f0; /* Darker color on hover */
+}
+.first{
+  font-size: 30px;
+}
+.last{
+  font-size: 30px;
+}
+.num{
+  font-size: 30px;
+  margin-right:55px;
+}
+.mail{
+  font-size: 30px;
+  margin-left: 65px;
+}
+.lar{
+  font-size: 30px;
+}
+.su{
+  font-size: 30px;
+}
+.ag{
+  font-size: 30px;
+  margin-left: 190px;
+}
+.custom-checkbox {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.custom-checkbox input[type="checkbox"] {
+  margin-right: 20px; /* Adjust the margin as needed */
+  transform: scale(2); /* Adjust the scale factor to change the size */
 }
+.first1{
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  border-radius: 10px; /* Adjust this value to your desired border-radius */
 }
